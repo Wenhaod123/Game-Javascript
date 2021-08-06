@@ -1,0 +1,68 @@
+<html>
+
+<title>Mardi Gras Parade!</title>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/page.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+    <div class='game-window'>
+      <p id="splash">Mardi Gras Parade!</p>
+      <div id="actualGame">
+
+        <div id='player' class='playerObject'>
+          <img class='player-avatar' src='img/person.png' height='50px'/> <!--person img: src='https://www.google.com/imgres?imgurl=http%3A%2F%2Fclipart-library.com%2Fnew_gallery%2F54-540691_others-clipart-helpful-person-generic-person.png&imgrefurl=http%3A%2F%2Fclipart-library.com%2Fclip-art%2F54-540691_others-clipart-helpful-person-generic-person.htm&tbnid=V19QgOYn0jYyzM&vet=12ahUKEwidx5GevcrnAhUJ0KwKHQynD9AQMygBegUIARCJAg..i&docid=hVn27RN51ga3yM&w=920&h=830&q=person&hl=en&ved=2ahUKEwidx5GevcrnAhUJ0KwKHQynD9AQMygBegUIARCJAg'-->
+        </div>
+
+        <div id="paradeRoute">
+          <div id="dottedLine"></div>
+          <div id="paradeFloats">
+            <div id="paradeFloat1" class='paradeFloat'>
+              <img src='img/parade_float_1.gif' height='80px' />
+              <!-- src: https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.clipart.email%2Fb0a85a880dc856c8129f51d506469510_mardi-gras-background-transparent-png-clipart-free-download-ywd_474-256.gif&imgrefurl=https%3A%2F%2Fwww.clipart.email%2Fclipart%2Ftransparent-background-mardi-gras-float-clipart-231098.html&tbnid=QDcU0K_06jcQJM&vet=12ahUKEwj40aPwwsrnAhUFgK0KHU4qCkQQMygEegUIARDsAQ..i&docid=7_c8q7QtWx89bM&w=474&h=256&q=mardi%20gras%20parade%20clip%20art&hl=en&client=firefox-b-1-e&ved=2ahUKEwj40aPwwsrnAhUFgK0KHU4qCkQQMygEegUIARDsAQ -->
+            </div>
+            <div id="paradeFloat2" class='paradeFloat'>
+            <img src='img/parade_float_2.png' height='80px' />
+              <!-- Adapted from src: https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.clipart.email%2F2075f16e1c812d5ba8ecece2b6924d75_mardi-gras-clipart-at-getdrawingscom-free-for-personal-use-_340-270.jpeg&imgrefurl=https%3A%2F%2Fwww.clipart.email%2Fclipart%2Fmardi-gras-float-clip-art-228088.html&tbnid=_LNqQJQgyaHKcM&vet=12ahUKEwj40aPwwsrnAhUFgK0KHU4qCkQQMygLegUIARD7AQ..i&docid=Fv4gfo44aw_StM&w=340&h=270&q=mardi%20gras%20parade%20clip%20art&hl=en&client=firefox-b-1-e&ved=2ahUKEwj40aPwwsrnAhUFgK0KHU4qCkQQMygLegUIARD7AQ -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- end game-window -->
+
+    <div class='status-window' style='text-align: center'>
+      <h3>Welcome!</h3>
+      <hr>
+      <br>
+      <p>Score:</p>
+      <h1 id='score-box'>0</h1>
+      <br/>
+      <div>
+        <b># of beads collected:</b>
+        <span id="beadsCounter">0</span>
+      </div>
+      <div>
+        <b># of candy pieces collected:</b>
+        <span id="candyCounter">0</span>
+      </div>
+      <div>
+        <button class="button1" onclick="opensetting()">Open settings panel</button>
+      </div>
+      <div class="panel">
+        <p id="mytext">Item thrown from parade float every <input type="text" id="input1" name="throwf" value="2000"> milliseconds (min allowed value: 100)</p>
+        <button class="button2" onclick="opensetting2()">Save and close settings panel</button>
+        <button class="button3" onclick="opensetting3()">Discard and close settings panel</button>
+      </div>
+    </div> <!-- end status-window -->
+
+  </div> <!-- end outer-container -->
+</body>
+
+</html>
